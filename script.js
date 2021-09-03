@@ -1,12 +1,24 @@
 // Declaração de variáveis
 
-let imagem = $("#dia")
-let enviar = $('#enviar')
+const imagem = $("#dia")
+const enviar = $('#enviar')
 
+// Eventos
 
 enviar.on('click', () =>{
     nasa()
-    console.log(date.value)
+})
+
+// Lógica de requisição de api e manipulação de documento com Jquery
+
+$.ajax({
+    url: `https://api.nasa.gov/planetary/apod?api_key=Zt5ss0RRWEJhhqmyjC3hqGiOwqGeAKxXR4yumBwm`,
+    method: 'get',
+    success: (response) => {
+        imagem.css('background-image',`url(${response.url})`)
+        $('#date').prop('max', response.date)
+        console.log(response)
+    }
 })
 
 function nasa(){
