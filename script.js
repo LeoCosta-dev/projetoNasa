@@ -18,10 +18,10 @@ function defaultsPage(){
         url: `https://api.nasa.gov/planetary/apod?api_key=Zt5ss0RRWEJhhqmyjC3hqGiOwqGeAKxXR4yumBwm`,
         method: 'get',
         success: (response) => {
-            imagem.css('background-image',`url(${response.url})`)
             $('#date').prop('max', response.date)
             $('#date').prop('value', response.date)
-            console.log(response)
+            imagem.css('background-image',`url(${response.url})`)
+            $('#texto').html(response.explanation)
         }
     })
 }
@@ -36,7 +36,6 @@ function nasa(){
        success: (response) => {
            imagem.css('background-image',`url(${response.url})`)
            $('#texto').html(response.explanation)
-           console.log(response)
        }
    })
 }
