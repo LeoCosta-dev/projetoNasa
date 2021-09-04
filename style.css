@@ -1,6 +1,18 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 #dia{
     width: 500px;
     height: 500px;
     border: black 3px solid;
     background-size: cover;
+}
+.container, section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    width: 90%;
 }

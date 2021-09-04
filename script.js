@@ -27,9 +27,7 @@ function defaultsPage(){
 }
 
 
-function nasa(){
-    
-    
+function nasa(){ 
     return $.ajax({
        url: `https://api.nasa.gov/planetary/apod?api_key=Zt5ss0RRWEJhhqmyjC3hqGiOwqGeAKxXR4yumBwm&date=${date.value}`,
        method: 'get',
