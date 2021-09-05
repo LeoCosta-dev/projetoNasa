@@ -23,11 +23,11 @@ function defaultsPage() {
             $('#texto').html(response.explanation)
             if (response.media_type == 'image') {
                 imagem.css('background-image', `url(${response.url})`)
-                document.getElementById('imagem').style.display = 'flex'
+                document.getElementById('dia').style.display = 'flex'
                 document.getElementById('video').style.display = 'none'
             } else if (response.media_type == 'video') {
                 video.setAttribute('src', response.url)
-                document.getElementById('imagem').style.display = "none"
+                document.getElementById('dia').style.display = "none"
                 document.getElementById('video').style.display = 'flex'
             }
         }
@@ -43,11 +43,11 @@ function nasa() {
             $('#texto').html(response.explanation)
             if (response.media_type == 'image') {
                 imagem.css('background-image', `url(${response.url})`)
-                document.getElementById('imagem').style.display = 'flex'
+                document.getElementById('dia').style.display = 'flex'
                 document.getElementById('video').style.display = 'none'
             } else if (response.media_type == 'video') {
                 video.setAttribute('src', response.url)
-                document.getElementById('imagem').style.display = "none"
+                document.getElementById('dia').style.display = "none"
                 document.getElementById('video').style.display = 'flex'
             }
         }
