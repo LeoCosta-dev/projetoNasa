@@ -1,11 +1,19 @@
+
 body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: black;
+    color: white;
 }
-#dia{
-    width: 500px;
-    height: 500px;
+header h1{
+    font-family:airstrikehalf;
+}
+#dia, #video{
+    display:none;
+    width: 80%;
+    height: 200px;
     border: black 3px solid;
     background-size: cover;
 }
@@ -15,4 +23,15 @@ body{
     align-items: center;
     align-content: center;
     width: 90%;
+}
+@media (min-width: 700px) {
+    #dia, #video{
+        height: 500px;
+    }
+}
+@font-face {
+    font-family: airstrike;
+    src: url(fontes/airstrike.ttf);
+    font-family: airstrikehalf;
+    src:url(fontes/airstrikehalf.ttf);
 }

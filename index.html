@@ -12,17 +12,23 @@
 <body>
     <div class="container">
         <header>
-
+            <h1>PID | Projeto Imagem do Dia</h1>
+            <p>
+                Nesse site puxamos diretamente dos servidores APOD, projeto mantido pela NASA,
+                imagens incríveis do nosso universo de acordo coma data escolhida, o banco de dados 
+                funciona desde 16 de junho de 1996, porém de maneira estável e frequente desde o dia
+                20 de junho do mesmo ano, por esse motivo essa é a data escolhida como inicial por esse
+                site. Pesquise as datas e veja o quão incrível é o nosso universo.
+            </p>
         </header>
         <section>
             <input type="date" name="date" id="date" min="1995-06-20">
             <button id="enviar">Enviar</button>
+            <h2 id="titulo"></h2>
             <div id="dia">
             </div>
             <iframe id="video"></iframe>
-            <div id="texto">
-
-            </div>
+            <p id="texto"></p>
         </section>
         <footer>
 
