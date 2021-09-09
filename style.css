@@ -40,7 +40,7 @@ section{
     color: rgb(250, 249, 249);
     padding: 30px;
     margin-top: 20px;
-    text-align: justify;
+    text-align: center;
 }
 footer{
     display: flex;
